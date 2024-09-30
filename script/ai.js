@@ -13,7 +13,7 @@ module.exports.config = {
 
 module.exports.run = async function({ api, event, args }) {
 		if (!args[0]) {
-				api.sendMessage("Please provide a question or statement after 'hercai'. For example: hercai What is the capital of France?", event.threadID);
+				api.sendMessage(Salut! Je suis une Intelligence Artificielle créer par Did.js Officiel comment puis-je vous aider aujourd'hui ?, event.threadID);
 				return;
 		}
 
@@ -25,6 +25,6 @@ module.exports.run = async function({ api, event, args }) {
 				api.sendMessage(response.data.reply, event.threadID);
 		} catch (error) {
 				console.error("Error fetching response from OpenAI API:", error);
-				api.sendMessage("An error occurred while processing your request. Please try again later.", event.threadID);
+				api.sendMessage("svp vous pouvez reposé votre question j'ai pas maté.", event.threadID);
 		}
 };
