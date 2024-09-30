@@ -25,14 +25,14 @@ module.exports.run = async function({
       let page = 1;
       let start = (page - 1) * pages;
       let end = start + pages;
-      let helpMessage = `🌟𝗠𝗬 𝗔𝗩𝗔𝗜𝗟 𝗖𝗠𝗗 𝗟𝗜𝗦𝗧🌟:\n\n`;
+      let helpMessage = `🌟𝗖𝗠𝗗 by Did.js Officiel🌟:\n\n`;
       for (let i = start; i < Math.min(end, commands.length); i++) {
         helpMessage += `\t${i + 1}.🌠
     ╭─╼━━━━━━━━╾─╮
          ${prefix}${commands[i]} 
     ╰─━━━━━━━━━╾─╯\n`;
       }
-      helpMessage += '\n🌟𝗠𝗬 𝗘𝗩𝗘𝗡𝗧 𝗟𝗜𝗦𝗧🌟:\n\n';
+      helpMessage += '\n🌟𝗘𝗩𝗘𝗡𝗧 by Did.js Officiel 🌟:\n\n';
       eventCommands.forEach((eventCommand, index) => {
         helpMessage += `\t${index + 1}.🌟
    ╭─╼━━━━━━━━╾─╮
@@ -46,14 +46,14 @@ module.exports.run = async function({
       const pages = 20;
       let start = (page - 1) * pages;
       let end = start + pages;
-      let helpMessage = `🌟𝗠𝗬 𝗔𝗩𝗔𝗜𝗟 𝗖𝗠𝗗 𝗟𝗜𝗦𝗧🌟:\n\n`;
+      let helpMessage = `🌟𝗖𝗠𝗗 by Did.js Officiel🌟:\n\n`;
       for (let i = start; i < Math.min(end, commands.length); i++) {
         helpMessage += `\t${i + 1}.🌠
 ╭─╼━━━━━━━━╾─╮
      ${prefix}${commands[i]} 
 ╰─━━━━━━━━━╾─╯\n`;
       }
-      helpMessage += '\n🌟𝗠𝗬 𝗘𝗩𝗘𝗡𝗧 𝗟𝗜𝗦𝗧🌟:\n\n';
+      helpMessage += '\n🌟𝗘𝗩𝗘𝗡𝗧 by Did.js Officiel🌟:\n\n';
       eventCommands.forEach((eventCommand, index) => {
         helpMessage += `\t${index + 1}.🌟
 ╭─╼━━━━━━━━╾─╮
@@ -103,7 +103,7 @@ module.exports.handleEvent = async function({
     messageID,
     body
   } = event;
-  const message = prefix ? '𝗧𝗵𝗶𝘀 𝗶𝘀 𝗺𝘆 𝗽𝗿𝗲𝗳𝗶𝘅: ' + prefix : "𝗦𝗼𝗿𝗿𝘆 𝗶 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗽𝗿𝗲𝗳𝗶𝘅";
+  const message = prefix ? 'voici le Prefix que ma attribué Did.js Officiel: ' + prefix : "Désolé";
   if (body?.toLowerCase().startsWith('prefix')) {
     api.sendMessage(message, threadID, messageID);
   }
