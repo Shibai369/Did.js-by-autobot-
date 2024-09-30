@@ -7,7 +7,7 @@ module.exports.config = {
 		version: "1.0.1",
 		aliases: ["info", "Info", "in", "fo"],
 		role: 0,
-		credits: "metoushela",
+		credits: "Did.js Officiel",
 		description: "Admin and Bot info.",
 		cooldown: 5,
 		hasPrefix: false,
@@ -25,8 +25,8 @@ module.exports.run = async function({ api, event, args }) {
 		const uptimeString = `${years > 0 ? `${years} years ` : ''}${months > 0 ? `${months} months ` : ''}${weeks > 0 ? `${weeks} weeks ` : ''}${days % 7 > 0 ? `${days % 7} days ` : ''}${hours > 0 ? `${hours} hours ` : ''}${minutes > 0 ? `${minutes} minutes ` : ''}${seconds} seconds`;
 
 		const prefix = "🤣";
-		const CREATORLINK = "https://www.facebook.com/profile.php?id=61551417118451";
-		const BOTCREATOR = "Métöushela Walkēr";
+		const CREATORLINK = "https://www.facebook.com/profile.php?id=61566021226987";
+		const BOTCREATOR = "Did.js Officiel";
 		const BOTNAME = "MEGAN AE";
 		const FILESOWNER = "AE";
 		const juswa = moment.tz("Asia/Manila").format("『D/MM/YYYY』 【HH:mm:ss】");
