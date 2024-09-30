@@ -26,7 +26,7 @@ module.exports.run = function ({ api, event, prefix, admin }) {
 
 		api.sendMessage(
 				{
-						body: `𝗵𝗲𝗹𝗹𝗼, 𝗺𝘆 𝗽𝗿𝗲𝗳𝗶𝘅 𝗶𝘀 [ ${prefix} ]\n━━━━━━━━━━━━━━━━━━━━━━━\n𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥: https://www.facebook.com/${admin}\n━━━━━━━━━━━━━━━━━━━━━━━`,
+						body: `voici le Prefix que ma attribué Did.js Officiel [ ${prefix} ]\n━━━━━━━━━━━━━━━━━━━━━━━\n𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥: https://www.facebook.com/${admin}\n━━━━━━━━━━━━━━━━━━━━━━━`,
 						attachment: fs.createReadStream(__dirname + "/cache2/prefix.jpeg")
 				},
 				threadID,
